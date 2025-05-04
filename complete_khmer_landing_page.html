@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ពង្រឹងការនិយាយអង់គ្លេស</title>
+  <link href="https://fonts.googleapis.com/css2?family=Siemreap&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Siemreap', sans-serif;
+      background-color: #fff;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #3a0ca3, #7209b7);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      animation: fadeInLeft 2s ease-in-out 1s forwards;
+      opacity: 0;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      background: #38b000;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .about {
+      background-color: #f4f4f4;
+      color: #333;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: linear-gradient(to bottom, #fef9ef, #f0f0f0);
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 280px;
+      animation: zoomIn 1.5s ease-out;
+    }
+
+    .testimonials {
+      background-color: #eeeeff;
+    }
+
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-style: italic;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .closing {
+      background: linear-gradient(to right, #c9184a, #720026);
+      color: white;
+    }
+
+    .closing h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .closing .cta-button {
+      background-color: #ffca3a;
+      color: #000;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 20px #f72585, 0 0 30px #7209b7; }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .feature-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>ពង្រឹងការនិយាយអង់គ្លេស</h1>
+    <p>Build your confidence in speaking English today!</p>
+    <a href="https://t.me/alita995" class="cta-button">ចុះឈ្មោះឥឡូវនេះ</a>
+  </section>
+
+  <section class="about">
+    <h2>អំពីវគ្គសិក្សា</h2>
+    <p>កម្មវិធីនេះបង្កើតឡើងដើម្បីជួយអ្នកបង្កើនជំនឿខ្លួនឯង និងការប្រើប្រាស់ភាសាអង់គ្លេសក្នុងជីវិតប្រចាំថ្ងៃ។</p>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>ការបង្រៀនផ្ទាល់</h3>
+      <p>រៀនជាមួយគ្រូដែលមានបទពិសោធន៍ និងស្មោះត្រង់។</p>
+    </div>
+    <div class="feature-card">
+      <h3>ពេលវេលាបត់បែនបាន</h3>
+      <p>សម្រួលនឹងកាលវិភាគរបស់អ្នក។</p>
+    </div>
+    <div class="feature-card">
+      <h3>មេរៀនអន្តរកម្ម</h3>
+      <p>សកម្មភាពពិតប្រាកដក្នុងថ្នាក់សិក្សាដែលជួយបង្កើនការចូលរួម។</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>អ្វីដែលសិស្សនិយាយ</h2>
+    <div class="testimonial">“វគ្គនេះពិតជាល្អណាស់! ខ្ញុំមានទំនុកចិត្តក្នុងការនិយាយបែបជាតិខ្លាំងជាងមុន” - សិស្សម្នាក់</div>
+    <div class="testimonial">“ការសិក្សាជាមួយគ្រូស្រួលនឹងមានការជួយផ្ទាល់ខ្លួន” - សិស្សម្នាក់</div>
+  </section>
+
+  <section class="closing">
+    <h2>មកបញ្ចេញសម្លេងរបស់អ្នកជាមួយយើង!</h2>
+    <a href="https://t.me/alita995" class="cta-button">ចុះឈ្មោះឥឡូវនេះ</a>
+  </section>
+
+</body>
+</html>
